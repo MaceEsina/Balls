@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Drag the ball and drop it into the field. Enjoy the Brownian motion!\r You also can set speed and initial direction vector.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaceEsina/Balls.git"
+  },
+  "author": "Svetlana Esina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaceEsina/Balls/issues"
+  },
+  "homepage": "https://github.com/MaceEsina/Balls#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-jasmine": "^2.4.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-webserver": "^0.9.1"
+  }
+}
