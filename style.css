@@ -5,6 +5,8 @@ body {
 
 .helper-message {
   margin: 10px 20px;
+  display: inline-block;
+  position: absolute;
 }
 .helper-message-title {
   font-size: 16px;

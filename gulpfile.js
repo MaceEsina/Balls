@@ -19,18 +19,18 @@ gulp.task('uglify', ['browserify'], function() {
 })
 
 gulp.task('webserver', function() {
-  gulp.src('build')
+  gulp.src('')
     .pipe(webserver({
       livereload: true,
       open: true
-    }));
+    }).on('error', function(e) {
+		console.log(e);
+	}));
 });
 
 gulp.task('test', function() {
 	gulp.src('spec/test.js')
-	.pipe(jasmine().on('error', function(e) {
-		console.log(e);
-	}))
+	.pipe(jasmine())
 })
 
 gulp.task('default', ['webserver', 'uglify'], function() {

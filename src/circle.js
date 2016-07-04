@@ -26,7 +26,10 @@ Circle.prototype = {
       this.dy*= -1;
     }
     if(this.x-this.r<fieldX){
-      this.dx *= -1;
+      if (this.dx!=0) {
+      	this.dx *= -1;
+      	this.x = fieldX + this.r;
+      }
     }
     ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false);
     ctx.fill();

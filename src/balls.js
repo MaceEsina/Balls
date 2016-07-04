@@ -90,8 +90,6 @@ function gameLoop(ctx) {
     circlesList[i].y += speed * circlesList[i].dy;
   }
 
-  drawCircles(ctx);
-
   for(var i in circlesList){
     for(var j in circlesList){
       if(circlesList[i]!=circlesList[j] && circlesList[i].isCollideWithCircle(circlesList[j])){
@@ -102,6 +100,8 @@ function gameLoop(ctx) {
     }
   }
 
+  drawCircles(ctx);
+  
   document.body.style.cursor = mousePointer ? "pointer" : "";
 };
 
