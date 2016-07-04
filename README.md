@@ -12,4 +12,5 @@ Run server
 
 Run tests
 ----------
-    gulp tests
+
+    gulp test
