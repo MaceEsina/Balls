@@ -18,9 +18,7 @@ window.onload = function (){
 
   var changeVectorCoordsButton = document.getElementById("changeVectorCoordsButton");
   changeVectorCoordsButton.addEventListener("click", function () {
-    console.log('button click');
     var newDx = document.getElementById("dx").value;
-    console.log(newDx);
     var newDy = document.getElementById("dy").value;
     var newSpeed = document.getElementById("speed").value;    
     if(newDx == "") newDx = undefined;
